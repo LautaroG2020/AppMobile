@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de compras - LG</title>
+    
+    <!--CDN Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/index.css">    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">   
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/1d3211b7a3.js" crossorigin="anonymous"></script>
+    <!--FavIcono Carrito-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Redes Media-->
+    <meta property="og:title" content="Crea tu lista antes de ir a comprar, no te olvides de nada.">
+    <meta property="og:description" content="Lista de compras varias.">
+    <meta property="og:type" content="Clase">
+    <meta property="og:image" content="img/asset/facebook.jpg">
+    <meta property="og:url" content="https://escueladevrock.com">
+
+    <meta property="twitter:title" content="No te olvides de nada, compra TODO" />
+    <meta property="twitter:description" content="Lista de compras varias." /> 
+    <meta property="twitter:type" content="Clase" />
+    <meta property="twitter:image" content="https://img.freepik.com/vector-gratis/carrito-compras-supermercado-vacio-realista-aislado-blanco_53562-6809.jpg?size=338&ext=jpg" />
+    <meta property="twitter:url" content="https://img.freepik.com/vector-gratis/carrito-compras-supermercado-vacio-realista-aislado-blanco_53562-6809.jpg?size=338&ext=jpg" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/asset/icono.svg" alt="" ><p>Lista de Compras</p></a>
+        </nav>
+    </header>
+    <section>
+        <div class="content">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-8">
+                
+            </div>
+        </div>
+    </section>
+    <section class="container" id="noItem">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>No tienes items agregados en tu lista de compras. <br> <i class="far fa-frown"></i></h1>
+            </div>
+        </div>
+    </section>
+
+    <!--LISTADO section-->
+    <section id="listado" class="listado">
+        <h1 class="h1-listado">Items a Comprar</h1><img src="img/asset/plan.svg" alt="" class="icono">
+        <div class="contenedor-listado">
+            <ul class="list-group" id="listadoPadre"> 
+               
+            </ul>
+        </div>
+        
+    </section>
+
+    <section id="detalle" class="detalle">
+        <img src="" id="detalleIcono" class="detalleIcono" alt="">
+        <h1 id="detalleProducto"></h1>
+        <p id="detalleInfo"></p>
+        <button type="button" class="boton btn-primary" id="btnCerrar">Cerrar</button>
+    </section>
+
+    <!--MODAL section-->
+    <section class="container" >
+        <form id="form" class="form">
+            <div class="modal fade" tabindex="-1" id="modalAgregarProducto">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title">Agregar nuevo Item</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="addIcono" class="form-label">Categoria</label><hr>
+                        <select name="select" id="addIcono" class="form-select">
+                            <option value="img/asset/paquete.svg" selected> Varios</option>
+                            <option value="img/asset/brocoli.svg">Verduras</option>
+                            <option value="img/asset/platano.svg">Frutas</option>
+                            <option value="img/asset/carne.svg" >Carnes</option>
+                            <option value="img/asset/pescado.svg" >Pescados</option>
+                            <option value="img/asset/leche.svg" >Lacteos</option>
+                            <option value="img/asset/pasta.svg" >Legumbres</option>
+                            <option value="img/asset/comida-enlatada.svg" >Conservas</option>
+                            <option value="img/asset/condimento.svg" >Condimentos</option>
+                            <option value="img/asset/cerveza.svg" >Bebidas con Alcohol</option>
+                            <option value="img/asset/agua.svg" >Bebidas sin Alcohol</option>
+                        </select>
+                        <div class="mb-3">
+                            <label for="addProducto" class="form-label">Producto</label><hr>
+                            <input type="email" class="form-control" id="addProducto" placeholder="Escribe un producto...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="addDescripcion" class="form-label">Descripción</label><hr>
+                            <textarea class="form-control" id="addDescripcion" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarProducto" id="guardarProducto">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </form>
+        
+    </section>
+    <button type="button" class="boton btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregarProducto" id="btnAdd">ADD+</button>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!--Link Js-->
+    <script src="js/index.js"></script>
+    
+</body>
+</html>

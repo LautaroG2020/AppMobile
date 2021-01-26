@@ -1,0 +1,131 @@
+header{
+    width: 100%;
+    height: 10vh;
+    background: #303F9F;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+}
+header nav a{
+    text-decoration: none;
+}
+
+header nav img{
+    width: 40px;
+    height: 50px;
+    margin: 15px;
+    display: inline;
+}
+header nav p{
+    display: inline-block;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    background: #bdbdbd5e;
+}
+
+.h1-listado{
+    display: inline;
+    margin-right: 5px;
+}
+
+hr{
+    margin-top: 0px;
+}
+label{
+    margin-bottom: 0px;
+}
+.container .row .col-md-12 h1{
+    margin: 15vh;
+    text-align: center;
+}
+
+.boton{
+    position: absolute;
+    border-radius: 50%;
+    background: #FF4081;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    
+}
+
+.botonSelect{
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.detalleIcono{
+    width: 140px;
+}
+
+#detalle{
+    display: none;
+}
+
+.detalle {
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalle h1{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.listado{
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+}
+
+.contenedor-listado{
+    text-align: left;
+    max-height: 100px;
+}
+
+.icono{
+    width: 40px;
+    margin: 5px;
+}
+
+.form-select{
+    margin-bottom: 10px;
+}
+
+.modal-header{
+    background: #303F9F;
+    color: #FFFFFF;
+}
+
+.modal-footer{
+    background: #303F9F;
+}
+
+.btn-primary{
+    background: #FF4081;
+    border-color: #FF4081;
+}
+
+.btn-secondary{
+    background: #757575;
+}
